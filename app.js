@@ -78,12 +78,7 @@ speakable.on('speechResult', function(spokenWords) {
 
             for (i = 0, len = pictures.length; i < len; i++) {
               picture = pictures[i];
-              if (picture.url === 'http://spanish.fansshare.com/photos/scarlettjohansson/scarlett-johansson-boobs-pic-hot-2044943452.jpg') {
-                picture.url = 'http://cdn23.us1.fansshare.com/photos/scarlettjohansson/scarlett-johansson-boobs-pic-hot-712435720.jpg';
-                imageHTML = imageHTML + '<img src="'+picture.url+'" width="50%" />';
-              } else {
-                imageHTML = imageHTML + '<img src="'+picture.url+'" width="50%" />';
-              }
+              imageHTML = imageHTML + '<img src="'+picture.url+'" width="50%" />';
             }
             
             sendData(imageHTML, 'images');
